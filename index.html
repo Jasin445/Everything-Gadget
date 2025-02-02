@@ -4,10 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brancher</title>
+  <script defer src="index.js"></script>
+  <style>
+    .container{
+      height:100vh;
+      width:100%;
+      place-content: center;
+      place-items: center;
+    }
+
+    label{
+      display: block;
+      margin-bottom:6px;
+      font-size:18px;
+      text-transform: capitalize;
+    }
+
+    input{
+      width:100%;
+      padding:16px 9px;
+      border-radius:8px;
+      border:1px solid grey;
+    }
+
+    form{
+      width:50%;
+    }
+
+    .hold{
+      margin-bottom:14px;
+    }
+
+    #submitted{
+      padding:12px;
+      border-radius: 8px;
+      border:1px solid grey;
+    }
+
+    .failure{
+      color:red;
+    }
+
+    .success{
+      color:green;
+    }
+  </style>
 </head>
 <body>
-  <p>This is the most interesting part of it</p>
+  <div class="container">
+    <form action="#" id="form">
+      <div class="hold">
+        <label for="name">Enter your name</label>
+        <input id="name" name="name" type="text">
+        <p class="message"></p>
+      </div>
+      <div class="hold">
+        <label for="email">Enter your email</label>
+        <input id="email" name="email" type="text">
+        <p class="message"></p>
+      </div>
+      <div class="hold">
+        <label for="password">Enter your password</label>
+        <input id="password" name="password" type="text">
+        <p class="message"></p>
+      </div>
 
+      <button id="submitted">Submit Form</button>
+    </form>
+  </div>
+	
+
+
+	
+   seriously, there's a lot to do here
    i love to add a footer to this file
 </body>
 </html>
