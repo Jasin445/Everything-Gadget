@@ -42,3 +42,31 @@ form.addEventListener('submit', event => {
   }, 1000);
 
 })
+
+
+let array = [1, 2, 3, 4, 2, 3, 5, 6, 1];
+
+function getUniqueItems(arr) {
+  return arr.reduce((accumulator, element) => {
+    if (!accumulator.includes(element)) {
+      accumulator.push(element)
+    }
+    console.log(accumulator)
+    return accumulator
+  }, [])
+}
+
+function getUniqueItems1(arr) {
+  let seen = {};
+
+  return arr.filter(item => {
+    if (seen.hasOwnProperty(item)) {
+      return false
+    } else {
+      return seen[item] = true
+    }
+  })
+
+}
+
+console.log(getUniqueItems1(array))
