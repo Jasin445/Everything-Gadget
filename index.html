@@ -45,9 +45,49 @@
       color:red;
     }
 
+    .hide{
+      display:none;
+    }
+
+    .error{
+      margin-top: 37px;
+      color:red;
+      font-size: 1.5rem;
+      text-align: center;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height:230px;
+    }
+
     .success{
       color:green;
     }
+
+    .status{
+      background-color: bisque;
+      min-width:640px;
+      color:brown;
+      padding:10%;
+    }
+
+    .condi{
+      display:flex;
+      justify-content: left;
+      align-items: center;
+    }
+
+    .imgs{
+      width:4%;
+      transform: translate(0, 140px);
+    }
+
+    .imgs img{
+      width:100%;
+    }
+
+    
   </style>
 </head>
 <body>
@@ -75,7 +115,18 @@
 	
 
 
-	
+  <div class="container">
+    <div class="wrap">
+      <input type="text" id="weather" value="lagos" required>
+      <button type="submit" id="start">Check Weather Status</button>
+    </div>
+    
+      <div class="imgs">
+        <img src="./asset/Loading_2.gif" alt="Loader not available">
+      </div>
+      
+      <img src="" alt="">
+  </div>
    
 </body>
 </html>
