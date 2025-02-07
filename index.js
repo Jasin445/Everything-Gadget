@@ -177,3 +177,41 @@ function displayerror(msg) {
 
 
 submitted.addEventListener('click', inputData)
+
+
+const inputted = document.getElementById("myValue");
+const submitting = document.getElementById("submitting");
+
+let editFlag = false;
+let editElement;
+let editId;
+
+
+submitting.addEventListener('click', (event) => {
+  event.preventDefault();
+  let enter = inputted.value
+  let id = new Date().getTime().toString();
+
+  if (enter && !editFlag) {
+    let mi = document.createElement("div");
+    mi.classList.add('cont');
+    mi.id = id;
+    let me = ` <div class="cor">
+            <p>${enter}</p>
+          </div>`;
+    mi.innerHTML = me;
+    document.querySelector(".contained").append(mi)
+
+    inputted.value = "";
+    
+    
+
+    console.log("logger");
+  } else if (enter && editFlag) {
+    console.log("editing")
+  }
+  else {
+    console.log("input empty")
+  }
+})
+

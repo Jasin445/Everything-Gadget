@@ -1,95 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brancher</title>
   <script defer src="index.js"></script>
   <style>
-    .container{
-      height:100vh;
-      width:100%;
+    .container {
+      height: 100vh;
+      width: 100%;
       place-content: center;
       place-items: center;
     }
 
-    label{
+    label {
       display: block;
-      margin-bottom:6px;
-      font-size:18px;
+      margin-bottom: 6px;
+      font-size: 18px;
       text-transform: capitalize;
     }
 
-    input{
-      width:100%;
-      padding:16px 9px;
-      border-radius:8px;
-      border:1px solid grey;
-    }
-
-    form{
-      width:50%;
-    }
-
-    .hold{
-      margin-bottom:14px;
-    }
-
-    #submitted{
-      padding:12px;
+    input {
+      width: 100%;
+      padding: 16px 9px;
       border-radius: 8px;
-      border:1px solid grey;
+      border: 1px solid grey;
     }
 
-    .failure{
-      color:red;
+    form {
+      width: 50%;
     }
 
-    .hide{
-      display:none;
+    .hold {
+      margin-bottom: 14px;
     }
 
-    .error{
+    #submitted {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid grey;
+    }
+
+    .failure {
+      color: red;
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .error {
       margin-top: 37px;
-      color:red;
+      color: red;
       font-size: 1.5rem;
       text-align: center;
-      display:flex;
+      display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height:230px;
+      height: 230px;
     }
 
-    .success{
-      color:green;
+    .success {
+      color: green;
     }
 
-    .status{
+    .status {
       background-color: bisque;
-      min-width:640px;
-      color:brown;
-      padding:10%;
+      min-width: 640px;
+      color: brown;
+      padding: 10%;
     }
 
-    .condi{
-      display:flex;
+    .condi {
+      display: flex;
       justify-content: left;
       align-items: center;
     }
 
-    .imgs{
-      width:4%;
+    .imgs {
+      width: 4%;
       transform: translate(0, 140px);
     }
 
-    .imgs img{
-      width:100%;
+    .imgs img {
+      width: 100%;
     }
 
-    
+    .cont {
+      background-color: lightblue;
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .containers {
+      width: 100%;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <form action="#" id="form">
@@ -112,7 +125,7 @@
       <button id="submitted">Submit Form</button>
     </form>
   </div>
-	
+
 
 
   <div class="container">
@@ -120,13 +133,24 @@
       <input type="text" id="weather" value="lagos" required>
       <button type="submit" id="start">Check Weather Status</button>
     </div>
-    
-      <div class="imgs">
-        <img src="./asset/Loading_2.gif" alt="Loader not available">
-      </div>
-      
-      <img src="" alt="">
+
+    <div class="imgs">
+      <img src="./asset/Loading_2.gif" alt="Loader not available">
+    </div>
+
   </div>
-   
+  <div class="containers">
+
+    <input type="text" id="myValue">
+
+    <button id="submitting">Submit</button>
+
+    <div class="contained">
+
+    </div>
+
+  </div>
+
 </body>
+
 </html>
